@@ -1,5 +1,5 @@
 module.exports = {
-  countries_with_school_connectivity: process.env.countries_with_school_connectivity || '{"COL": 1, "BRA": 1, "MRT": 1}',
+  countries_with_school_connectivity: process.env.countries_with_school_connectivity ||  '{"COL": 1, "BRA": 1, "KGZ": 1, "MRT": 1}',
 
   // 'schools' or 'mobility'
   mode: process.env.REACT_APP_MODE || 'mobility',
@@ -18,7 +18,7 @@ module.exports = {
   },
 
   // Require login?
-  login_required: process.env.REACT_APP_LOGIN_REQUIRED || false,
+  login_required: (process.env.REACT_APP_LOGIN_REQUIRED === 'true'),
 
   // Address of magicbox-open-api back-end
   // MAKE SURE DOES NOT HAVE TRAILING FORWARD SLASH
